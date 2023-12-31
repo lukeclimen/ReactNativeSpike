@@ -20,10 +20,6 @@ const AddItem = ({}) => {
   );
 };
 
-Header.defaultProps = {
-  title: 'Shopping List',
-};
-
 const Styles = StyleSheet.create({
   input: {
     height: 60,
