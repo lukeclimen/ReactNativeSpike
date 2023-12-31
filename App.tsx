@@ -1,10 +1,11 @@
 import React from 'react';
-import { View, Text, StyleSheet} from 'react-native';
+import { View, Text, StyleSheet, Image} from 'react-native';
 
 const App = () => {
   return (
     <View style={Styles.container}>
       <Text style={Styles.text}>Hello World</Text>
+      <Image source={{uri: 'https://randomuser.me/api/portraits/men/1.jpg'}} style={Styles.img} />
     </View>
   )
 }
@@ -18,6 +19,11 @@ const Styles = StyleSheet.create({
   text: {
     color:'darkslateblue',
     fontSize:30
+  },
+  img: {
+    width: 100,
+    height: 100,
+    borderRadius: 100/2
   }
 })
 
